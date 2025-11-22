@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RICO PEZ | Cevichería & Marisquería</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional: Add a Google Font for that premium look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Override default font */
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/logorecreo.png" alt="Logo Rico Pez" />
+      <h1>Rico Pez</h1>
+    </div>
+
+    <div class="bars" aria-label="Abrir menú">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#home" class="active">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-banner-img" id="home">
+    <img src="img/banner.jpg" alt="Banner ceviche" />
+    <div class="hero-text">
+      <h2>Rico Pez, tu mejor opción</h2>
+      <p>Frescura y sabor en cada plato.</p>
+      <a href="menu.html" class="btn-hero">Ver Menú Completo</a>
+    </div>
+  </section>
+
+  <!-- Platos Destacados -->
+  <section class="destacados" id="destacados">
+    <h2 class="section-title">Platos Estrella</h2>
+    <div class="platos">
+
+      <!-- Plato 1 -->
+      <div class="plato">
+        <div class="plato-img-container">
+          <img src="img/ceviche.jpg" alt="Ceviche Clásico">
+          <div class="plato-overlay"><span>Ver Detalle</span></div>
+        </div>
+        <div class="plato-content">
+          <span class="precio-etiqueta">S/ 20.00</span>
+          <h3>Ceviche Clásico</h3>
+          <div class="card-actions">
+            <a href="javascript:void(0)" onclick="pedirPorWhatsapp('Ceviche Clásico')" class="boton-whatsapp">
+              Pedir por WhatsApp
+            </a>
+            <button class="btn-view" data-img="img/ceviche.jpg" data-title="Ceviche Clásico"
+              data-desc="Pescado fresco marinado en limón.">Ver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plato 2 -->
+      <div class="plato">
+        <div class="plato-img-container">
+          <img src="img/JaleaMixta.jpg" alt="Jalea Mixta">
+          <div class="plato-overlay"><span>Ver Detalle</span></div>
+        </div>
+        <div class="plato-content">
+          <span class="precio-etiqueta">S/ 28.00</span>
+          <h3>Jalea Mixta</h3>
+          <div class="card-actions">
+            <a href="javascript:void(0)" onclick="pedirPorWhatsapp('Jalea Mixta')" class="boton-whatsapp">
+              Pedir por WhatsApp
+            </a>
+            <button class="btn-view" data-img="img/JaleaMixta.jpg" data-title="Jalea Mixta"
+              data-desc="Variedad de mariscos rebozados.">Ver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plato 3 -->
+      <div class="plato">
+        <div class="plato-img-container">
+          <img src="img/RondaMarina.jpg" alt="Ronda Marina">
+          <div class="plato-overlay"><span>Ver Detalle</span></div>
+        </div>
+        <div class="plato-content">
+          <span class="precio-etiqueta">S/ 35.00</span>
+          <h3>Ronda Marina</h3>
+          <div class="card-actions">
+            <a href="javascript:void(0)" onclick="pedirPorWhatsapp('Ronda Marina')" class="boton-whatsapp">
+              Pedir por WhatsApp
+            </a>
+            <button class="btn-view" data-img="img/RondaMarina.jpg" data-title="Ronda Marina"
+              data-desc="Surtido marino para compartir.">Ver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plato 4 -->
+      <div class="plato">
+        <div class="plato-img-container">
+          <img src="img/ceviche.jpg" alt="Mixto">
+          <div class="plato-overlay"><span>Ver Detalle</span></div>
+        </div>
+        <div class="plato-content">
+          <span class="precio-etiqueta">S/ 55.00</span>
+          <h3>Mixto</h3>
+          <div class="card-actions">
+            <a href="javascript:void(0)" onclick="pedirPorWhatsapp('Mixto')" class="boton-whatsapp">
+              Pedir por WhatsApp
+            </a>
+            <button class="btn-view" data-img="img/ceviche.jpg" data-title="Mixto"
+              data-desc="Combinación perfecta.">Ver</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Delivery Banner -->
+  <section class="delivery" id="delivery">
+    <h4>¡DELIVERY AL TOQUE!</h4>
+    <p>Haz tu pedido por WhatsApp y disfruta en casa.</p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <h2 class="section-title">Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">¿Cuál es el horario de atención?</div>
+      <div class="faq-answer">Nuestro horario es de lunes a domingo de 10:00 a.m. a 8:00 p.m.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">¿Hacen delivery a toda la ciudad?</div>
+      <div class="faq-answer">Sí, hacemos delivery en toda la ciudad con costo adicional según la zona.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">¿Puedo hacer pedidos por WhatsApp?</div>
+      <div class="faq-answer">¡Claro! Solo haz clic en el botón de WhatsApp o escríbenos directamente al número.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div style="font-weight:700; font-size: 1.2rem; margin-bottom: 15px;">RICO PEZ — Cevichería & Marisquería</div>
+
+      <div style="font-size:14px; opacity: 0.8; margin-bottom: 20px;">
+        &copy; 2025 Rico Pez. Todos los derechos reservados.<br>
+        Created by Dayron
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon fb" aria-label="Facebook">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon ig" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23c1.27-.06 1.64-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07c-4.27.2-6.78 2.71-6.98 6.98C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.27 2.71 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.27-.2 6.78-2.71 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.27-2.71-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84c-3.4 0-6.16 2.76-6.16 6.16S8.6 18.16 12 18.16 18.16 15.4 18.16 12 15.4 5.84 12 5.84zm0 10.16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.4-10.8c0 .66-.54 1.2-1.2 1.2s-1.2-.54-1.2-1.2.54-1.2 1.2-1.2 1.2.54 1.2 1.2z" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" class="social-icon tk" aria-label="TikTok">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 3.18-1.34 4.83-4.35 4.83-3.23 0-5.27-1.87-5.27-5.07 0-3.2 2.09-5.52 5.07-5.52.69 0 1.38.1 2.07.28v4.2c-.17-.05-.34-.09-.52-.12-.47-.08-1.13-.02-1.43.32-.3.34-.29.85-.29 1.28 0 .48.01.98.32 1.35.33.39.9.44 1.38.42.48-.02 1.06-.14 1.38-.51.34-.4.32-1.01.32-1.49V.02z" />
+          </svg>
+        </a>
+        <a href="https://wa.me/51988093255" target="_blank" class="social-icon wa" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.47 14.39c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.4.1s-.5.6-.6.8c-.1.2-.2.3-.4.2-.2-.1-.8-.3-1.6-1-.5-.5-1-1.1-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.2.3-.4.1-.1.1-.2.2-.4.1-.2.1-.3 0-.4-.1-.1-.4-1-.5-1.4-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.8.3-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.5-.5zM12 21.76h-.1c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-4.4 1.1 1.2-4.2-.3-.4C1 14.46.4 12.27.4 10.07.4 3.67 5.6 2.47 12 2.47c3.1 0 6 1.2 8.2 3.4 2.2 2.2 3.4 5.1 3.4 8.2 0 6.4-5.2 7.69-11.6 7.69z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/51988093255" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="img/logoWhatsapp.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
